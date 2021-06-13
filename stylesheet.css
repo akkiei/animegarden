@@ -1,0 +1,21 @@
+body {
+    background-color: #ff8000;
+}
+
+.w3-hover-dark-orange:hover {
+    color: #000!important;
+    background-color: #ff8000 !important;
+}
+
+.orange {
+    color: #000!important;
+    background-color: #ff8000 !important;
+}
+
+.dark-orange {
+    color: #000!important;
+    background-color: #ff9800!important;
+}
+
+
+/*.w3-nav-active {background-image: linear-gradient(orange, #ff8000)!important}*/
