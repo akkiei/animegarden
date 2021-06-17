@@ -1,21 +1,159 @@
-body {
-    background-color: #ff8000;
-}
+/* Color Classes */
 
-.w3-hover-dark-orange:hover {
-    color: #000!important;
-    background-color: #ff8000 !important;
-}
-
-.orange {
-    color: #000!important;
-    background-color: #ff8000 !important;
-}
-
-.dark-orange {
-    color: #000!important;
-    background-color: #ff9800!important;
+:root {
+    /* Nav Button Hover */
+    --navbtnhovbg: #16181b;
+    --navbtnhovfg: #f9f7f4;
+    /* Nav Button Default */
+    --navbtndefbg: black;
+    --navbtndeffg: #green;
+    --navbtnactivefg: #5ceb8c;
+    /*  */
+    --accentclr: #21a84d;
+    --accentclr2: #5ceb8c;
+    --bodybg: #141617;
 }
 
 
-/*.w3-nav-active {background-image: linear-gradient(orange, #ff8000)!important}*/
+/* hover foreground */
+
+.w3-hover-bl:hover {
+    color: var(--accentclr2)!important;
+}
+
+
+/* hover background */
+
+.w3-hover-bl:hover {
+    background-color: var(--navbtnhovbg)!important;
+}
+
+
+/* NAV-BUTTON HOVER BG = HEADER, BTN_GRP BG */
+
+.header-color,
+#btn_grp {
+    /* ACCENT COLOR */
+    color: var(--accentclr)!important;
+    background-color: var(--navbtnhovbg)!important;
+}
+
+
+/* MAIN BG */
+
+body,
+.footer {
+    color: white;
+    background-color: var(--bodybg) !important;
+}
+
+#btn_grp>button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* bottom border for non-active nav-button */
+    border-bottom: 1px solid var(--accentclr);
+}
+
+#sec {
+    /* section border */
+    border: 1px solid var(--accentclr) !important;
+    border-top: none !important;
+}
+
+
+/* ACTIVE NAV-BUTTON */
+
+.bg {
+    color: var(--navbtnactivefg) !important;
+    background-color: var(--bodybg) !important;
+    /* border all around */
+    /* except bottom */
+    border: 1px solid var(--accentclr) !important;
+    border-bottom: none !important;
+}
+
+
+/* DEFUALT NAV_BUTTON */
+
+.btn-default {
+    color: var(--navbtndeffg)!important;
+    background-color: var(--navbtndefbg)!important;
+}
+
+
+/* Text Panels */
+
+.headpanel {
+    box-shadow: 0px 0px 5px green !important;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--accentclr)!important;
+    background-color: var(--navbtndefbg) !important;
+}
+
+
+/* .panel {} */
+
+
+/* Normal Buttons */
+
+.btn {
+    text-decoration: none;
+    width: 50%;
+    background-color: black;
+    box-shadow: 0px 0px 5px var(--accentclr) !important;
+    border-radius: 3px;
+}
+
+
+/* Toggle Button */
+
+.togglebtn {
+    background-color: black;
+    color: var(--accentclr);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.headpanel>a {
+    padding: 100px !important;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: head;
+    src: url(Fonts/Kalam-Bold.ttf);
+}
+
+@font-face {
+    font-family: subhead;
+    src: url(Fonts/ShareTechMono-Regular.ttf);
+}
+
+.heading {
+    font-size: 235% !important;
+    font-family: 'head' !important;
+}
+
+.subheading {
+    font-size: 200% !important;
+    font-family: 'subhead' !important;
+}
+
+
+/* MISC */
+
+.wip {
+    color: red;
+}
+
+.mySlides {
+    display: none
+}
+
+.fa {
+    padding-top: 7px !important;
+}
