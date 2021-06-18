@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://kit.fontawesome.com/46f240ebc7.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
     <style>
 
     </style>
@@ -29,13 +30,9 @@
 
             <div id="btn_grp" class="w3-bar  w3-text-black w3-monospace ">
                 <button id="home_btn" class="  w3-bar-item w3-hover-bl w3-col bg" onclick="openpage('home','btn_grp');" style="width: 25%">Home</button>
-
                 <button id="anime_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default" onclick="openpage('anime','btn_grp');" style="width: 25%">Anime</button>
-
                 <button id="manga_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default" onclick="openpage('manga','btn_grp');" style="width: 25%">Manga</button>
-
                 <button id="novels_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default" onclick="openpage('novels','btn_grp');" style="width: 25%">Novels</button>
-
             </div>
 
         </header>
@@ -61,15 +58,44 @@
         <section id="anime" class="page" style="display:none">
 
             <div class="w3-container">
-                <div class="w3-panel w3-right">
-                    <!-- <p></p> -->
-                    <!-- <button></button> -->
-                    <!-- <i class="fa fa-toggle-on w3-center w3-large"></i> -->
-                </div>
-            </div>
 
-            <div class="w3-container">
-                <h3 class="w3-panel headpanel w3-center subheading">Anime Recommendations<button class="togglebtn w3-right" onclick="w3.toggleClass('.fa', 'fa-toggle-on', 'fa-solid fa-toggle-off')"><i class="fa fa-solid fa-toggle-on "></i></button></h3>
+                <!-- Anime Recommendations -->
+                <div class="toggle-anime">
+
+                    <!-- For Large Screens -->
+                    <h3 class="w3-panel headpanel w3-center subheading w3-hide-small">
+                        Anime Recommendations
+                        <button class="togglebtn w3-right" onclick="btnpress(); tgl_anime()">
+                            <i class="fa fa-solid fa-toggle-on "></i>
+                        </button>
+                    </h3>
+
+                    <!-- For Small Screens -->
+                    <h4 class="w3-panel headpanel w3-center subheading w3-hide-medium w3-hide-large">
+                        <button class="togglebtn w3-right" onclick="btnpress(); tgl_anime()">
+                            <i class="fa fa-solid fa-toggle-on "></i>
+                        </button> Anime Recommendations
+                    </h4>
+                </div>
+
+                <!-- Movie Recommendations -->
+                <div class="toggle-movie" style="display:none;">
+                    <!-- For Large Screens -->
+                    <h3 class="w3-panel headpanel w3-center subheading w3-hide-small">
+                        Movie Recommendations
+                        <button class="togglebtn w3-right" onclick="btnpress(); tgl_movie()">
+                            <i class="fa fa-solid fa-toggle-on "></i>
+                        </button>
+                    </h3>
+
+                    <!-- For Small Screens -->
+                    <h4 class="w3-panel headpanel w3-center subheading w3-hide-medium w3-hide-large">
+                        <button class="togglebtn w3-right" onclick="btnpress(); tgl_movie()">
+                            <i class="fa fa-solid fa-toggle-on "></i>
+                        </button> Movie Recommendations
+                    </h4>
+                </div>
+
             </div>
 
         </section>
@@ -100,22 +126,5 @@
     </div>
 
 </body>
-
-<script type="text/javascript">
-    function openpage(pagename, btn_grp_id) {
-        var i;
-        var x = document.getElementsByClassName("page");
-        const btn_grp = document.getElementById(btn_grp_id).children;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-
-        for (i = 0; i < btn_grp.length; i++) {
-            btn_grp[i].classList.replace('bg', 'btn-default');
-        }
-        document.getElementById(pagename).style.display = "block";
-        document.getElementById(`${pagename}_btn`).classList.replace('btn-default', 'bg') //"#ff8000";
-    }
-</script>
 
 </html>
