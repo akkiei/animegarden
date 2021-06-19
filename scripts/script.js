@@ -26,3 +26,13 @@ function tgl_movie() {
     w3.hide(".toggle-movie")
     w3.show('.toggle-anime')
 }
+function changeLogoColor() {
+    const domObj = document.getElementById("mainLogo");
+    let deg = 0;
+    setInterval(() => {
+        deg += 30;
+        deg %= 361;
+        domObj.style.filter = `hue-rotate(${deg}deg)`;
+    }, 300)
+    
+}
