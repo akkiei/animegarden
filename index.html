@@ -5,12 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <title>AG Home</title>
+    <!--adaptive to screen width change  -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- W3School W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- W3.JS -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- Icons- Fonts Awesome Kit -->
     <script src="https://kit.fontawesome.com/46f240ebc7.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
     <script src="scripts/script.js"></script>
     <style>
 
@@ -23,16 +30,21 @@
         <header>
 
             <div class="w3-container header-color w3-center">
-                <img src='Pics/logo.jpg' class="w3-border w3-border-green w3-circle w3-left" style="width:50px;height:50px;margin-top:10px" alt="anime garden logo">
+                <img onload="changeLogoColor()" id="mainLogo" src='Pics/logo.jpg' class="w3-border w3-border-green w3-circle w3-left"
+                    style="width:50px;height:50px;margin-top:10px" alt="anime garden logo">
                 <h1 class="w3-left heading">&nbsp;Anime Garden</h1>
 
             </div>
 
             <div id="btn_grp" class="w3-bar  w3-text-black w3-monospace ">
-                <button id="home_btn" class="  w3-bar-item w3-hover-bl w3-col bg" onclick="openpage('home','btn_grp');" style="width: 25%">Home</button>
-                <button id="anime_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default" onclick="openpage('anime','btn_grp');" style="width: 25%">Anime</button>
-                <button id="manga_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default" onclick="openpage('manga','btn_grp');" style="width: 25%">Manga</button>
-                <button id="novels_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default" onclick="openpage('novels','btn_grp');" style="width: 25%">Novels</button>
+                <button id="home_btn" class="  w3-bar-item w3-hover-bl w3-col bg" onclick="openpage('home','btn_grp');"
+                    style="width: 25%">Home</button>
+                <button id="anime_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default"
+                    onclick="openpage('anime','btn_grp');" style="width: 25%">Anime</button>
+                <button id="manga_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default"
+                    onclick="openpage('manga','btn_grp');" style="width: 25%">Manga</button>
+                <button id="novels_btn" class="  w3-bar-item w3-hover-bl w3-col btn-default"
+                    onclick="openpage('novels','btn_grp');" style="width: 25%">Novels</button>
             </div>
 
         </header>
@@ -45,13 +57,25 @@
         <section id="home" class="w3-container page">
 
             <h3 class="w3-content headpanel w3-center subheading">Home Page</h3>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer euismod tincidunt lacus non auctor. Curabitur
-                et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper tincidunt. Mauris urna enim,
-                accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis quis tortor molestie pretium.
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed,
+                maximus dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer
+                euismod tincidunt lacus non auctor. Curabitur
+                et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus
+                id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper
+                tincidunt. Mauris urna enim,
+                accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at
+                rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis
+                quis tortor molestie pretium.
                 Nullam imperdiet leo sit amet arcu venenatis posuere. Duis iaculis hendrerit maximus. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer euismod tincidunt lacus non auctor. Curabitur
-                et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper tincidunt. Mauris urna enim,
-                accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis quis tortor molestie pretium.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus
+                dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer euismod
+                tincidunt lacus non auctor. Curabitur
+                et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus
+                id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper
+                tincidunt. Mauris urna enim,
+                accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at
+                rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis
+                quis tortor molestie pretium.
                 Nullam imperdiet leo sit amet arcu venenatis posuere. Duis iaculis hendrerit maximus. </p>
         </section>
 
@@ -61,7 +85,7 @@
 
                 <!-- Anime Recommendations -->
                 <div class="toggle-anime">
-
+                    <!-- REALLY SORRY ABOUT THE REPEATED CODE -->
                     <!-- For Large Screens -->
                     <h3 class="w3-panel headpanel w3-center subheading w3-hide-small">
                         Anime Recommendations
@@ -76,6 +100,46 @@
                             <i class="fa fa-solid fa-toggle-on "></i>
                         </button> Anime Recommendations
                     </h4>
+
+                    <!-- Anime List -->
+                    <div class="anime-list w3-container">
+
+                        <div class="anime-list-items">
+
+                            <img class="anime-list-item-img" src="Pics/aot.jpg">
+
+                            <div class="anime-list-item-text">
+                                <p>Attack On Titan</p>
+                                <div class="w3-bar">
+                                    <ul class="tags">
+                                        <li class="">Action</li>
+                                        <li class="">Drama</li>
+                                        <li class="">Fantasy</li>
+                                        <li class="">Mystery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="anime-list-items">
+
+                            <img class="anime-list-item-img" src="Pics/aot.jpg">
+
+                            <div class="anime-list-item-text">
+                                <p>Attack On Titan</p>
+                                <div class="w3-bar">
+                                    <ul class="tags">
+                                        <li class="">Action</li>
+                                        <li class="">Drama</li>
+                                        <li class="">Fantasy</li>
+                                        <li class="">Mystery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
 
                 <!-- Movie Recommendations -->
@@ -94,6 +158,10 @@
                             <i class="fa fa-solid fa-toggle-on "></i>
                         </button> Movie Recommendations
                     </h4>
+
+                    <!-- Movie List -->
+                    <div class="movie-list">
+                    </div>
                 </div>
 
             </div>
@@ -103,18 +171,30 @@
         <section id="manga" class="w3-container page" style="display:none">
             <div>
                 <h3 class="w3-panel headpanel w3-center subheading">Manga Recommendations</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer euismod tincidunt lacus non auctor. Curabitur
-                    et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper tincidunt. Mauris urna enim,
-                    accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis quis tortor molestie pretium.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus
+                    dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer
+                    euismod tincidunt lacus non auctor. Curabitur
+                    et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et
+                    tellus id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero
+                    ullamcorper tincidunt. Mauris urna enim,
+                    accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna
+                    at rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius
+                    felis quis tortor molestie pretium.
                     Nullam imperdiet leo sit amet arcu venenatis posuere. Duis iaculis hendrerit maximus. </p>
             </div>
         </section>
 
         <section id="novels" class="w3-container page" style="display:none">
             <h3 class="w3-panel headpanel w3-center subheading">Novel Recommendations</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer euismod tincidunt lacus non auctor. Curabitur
-                et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper tincidunt. Mauris urna enim,
-                accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis quis tortor molestie pretium.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nunc, ornare nec sem sed, maximus
+                dictum est. Fusce congue accumsan rutrum. Quisque vitae eros non elit gravida porttitor. Integer euismod
+                tincidunt lacus non auctor. Curabitur
+                et dolor consectetur ante commodo ultricies. In dapibus id nisl ut interdum. Quisque egestas et tellus
+                id fermentum. Nulla blandit ipsum malesuada tincidunt ornare. Nunc id erat sit amet libero ullamcorper
+                tincidunt. Mauris urna enim,
+                accumsan vel laoreet et, dictum id velit. Aliquam maximus in arcu ac lacinia. Etiam ullamcorper urna at
+                rhoncus accumsan. Nulla eu lectus accumsan, aliquam quam nec, gravida nisl. Pellentesque varius felis
+                quis tortor molestie pretium.
                 Nullam imperdiet leo sit amet arcu venenatis posuere. Duis iaculis hendrerit maximus. </p>
         </section>
     </div>
